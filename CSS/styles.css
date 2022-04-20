@@ -380,10 +380,13 @@ span{
 }
 
 .header {
-    border-bottom: 1px solid #ececec;
-    
+ border-bottom: 1px solid 
+#ECECEC ;
 
 }
+    
+
+
 .page-header{
     display: flex;
     align-items: center;
@@ -722,4 +725,39 @@ align-items: center;
 .footer-icon{
 fill: 
 #FFFFFF;
+}
+.current{
+    position: relative;
+}
+ .current::after{
+      content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+}
+.services-item{
+    position: relative;
+}
+.services-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background-color);
+    background-color: rgba(47, 48, 58, 0.8);
 }
